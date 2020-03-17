@@ -1,0 +1,71 @@
+.center {
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button,
+#submit {
+    text-align: center;
+    width: 100px;
+    background-color: rgb(124, 166, 242);
+    font-weight: bold;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid darkgrey;
+    transition-duration: 400ms;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+input {
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+label {
+    font-size: 20px;
+}
+
+.box {
+    width: 400px;
+    height: auto;
+    background-color: gainsboro;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+select{
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+}
+#search-result{
+    font-size: 20px;
+}
+.column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="column">
+        <div class="center row">
+            <div class='container-creat box center'>
+                <div>
+                    <div class="center">
+                        <label>Plate:</label>
+                        <input type="text" placeholder='Plate' id='plate-input'>
+                        <p id='plate-result'></p>
+                    </div>
+                    <div class="center">
+                        <label>Color:</label>
+                        <select name="" id="color-input">
+                            <option></option> 
+                            <option value="red">white</option> 
+                            <option value="red">black</option> 
+                            <option value="red">Red</option> 
+                            <option value="red">blue</option> 
+                            <option value="red">green</option> 
+                        </select>
+                        <p id='color-result'></p>
+                    </div>
+                    <div class="center">
+                        <label>Brand:</label>
+                        <input type="text" placeholder='Brand' id='brand-input'>
+                        <p id='brand-result'></p>
+                    </div>
+                    <div class="center">
+                        <button id='create'>Crear</button>
+                        <p id='create-result'></p>
+                    </div>
+                </div>
+            </div>
+            <div class='container-wheel box center'>
+                <div class="center">
+                    <label>Plate:</label>
+                    <select name="" id="plate-select">
+                        <option value=""></option>
+                    </select>
+                    <p id='plate-result'></p>
+                </div>
+                <div>
+                    <label>Rueda 1:</label>
+                    <select name="" id="brandWheel1">
+                        <option></option> 
+                        <option value="Bridgestone">Bridgestone</option> 
+                        <option value="Continental">Continental</option> 
+                        <option value="Goodyear">Goodyear</option> 
+                        <option value="Pirelli">Pirelli</option> 
+                        <option value="Hankook">Hankook</option>
+                        <option value="Michelin">Michelin</option>
+                    </select>
+            
+                    <input type="text" placeholder='wheel 1' id='wheel1'>
+                    <p id='wheel1-result'></p>
+                </div>
+                <div>
+                    <label>Rueda 2:</label>
+                    <select name="" id="brandWheel2">
+                        <option></option> 
+                        <option value="Bridgestone">Bridgestone</option> 
+                        <option value="Continental">Continental</option> 
+                        <option value="Goodyear">Goodyear</option> 
+                        <option value="Pirelli">Pirelli</option> 
+                        <option value="Hankook">Hankook</option>
+                        <option value="Michelin">Michelin</option>
+                    </select>
+                    <input type="text" placeholder='wheel 2' id='wheel2'>
+                    <p id='wheel2-result'></p>
+                </div>
+                <div>
+                    <label>Rueda 3:</label>
+                    <select name="" id="brandWheel3">
+                        <option></option> 
+                        <option value="Bridgestone">Bridgestone</option> 
+                        <option value="Continental">Continental</option> 
+                        <option value="Goodyear">Goodyear</option> 
+                        <option value="Pirelli">Pirelli</option> 
+                        <option value="Hankook">Hankook</option>
+                        <option value="Michelin">Michelin</option>
+                    </select>
+            
+                    <input type="text" placeholder='wheel 3' id='wheel3'>
+                    <p id='wheel3-result'></p>
+                </div>
+                <div>
+                    <label>Rueda 4:</label>
+                    <select name="" id="brandWheel4">
+                        <option></option> 
+                        <option value="Bridgestone">Bridgestone</option> 
+                        <option value="Continental">Continental</option> 
+                        <option value="Goodyear">Goodyear</option> 
+                        <option value="Pirelli">Pirelli</option> 
+                        <option value="Hankook">Hankook</option>
+                        <option value="Michelin">Michelin</option>
+                    </select>
+            
+                    <input type="text" placeholder='wheel 4' id='wheel4'>
+                    <p id='wheel4-result'></p>
+                </div>
+                <div class="center">
+                    <button id='putWheel'>Añadir</button>
+                    <p id='putWheel-result'></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-result box center">
+            <input type="text" placeholder="Esciba la matricula" id='search-input'>
+            <button id='search'>Buscar</button>
+            <p id='search-result'></p>
+        </div>
+        <!-- <p id="carInfo"></p> -->
+        <!-- <button onclick="createCar('1212SDS','SEAT','ROJO')">Create car</button> -->
+
+
+    </main>
+
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</body>
